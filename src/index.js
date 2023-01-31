@@ -9,7 +9,7 @@ root.render(
     <Auth0Provider
       domain='carobte-dev.us.auth0.com'
       clientId='AB6SVGWqHYVDWb6AgTvRYVfmlLxZHZSO'
-      redirectUri={window.location.origin}
+      authorizationParams={{ redirect_uri: window.location.origin }}
     >
       <App />
     </Auth0Provider>
